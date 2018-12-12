@@ -1,0 +1,5 @@
+From Ubutu14.04
+ADD clean_log /usr/bin/clean_log #clean_log文件位置
+RUN chmod +x /usr/bin/log
+ENTRYPOINT ["/usr/bin/clean_log"]
+CMD ["7"]

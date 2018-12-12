@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "删除超过$1天的日志数据"
+find /log/dir -ctime "$1" -name '*.log' -exec rm {} \;
